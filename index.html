@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -9,13 +9,55 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <title><Weather-app></Weather-app></title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather-app</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Hello World</h1>
+    <div class="entirePage">
+      <div class="container">
+        <div class="row">
+        <div class="col-6">
+        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+        </div>
+        <div class="col-4">
+        <input class="btn btn-primary" type="submit" value="Submit">
+        </div>
+        </div>
+        <h1 class="location" id="location">Current City/location</h1>
+        <p class="time" id="time">Time</p>
+    
+        <div class="row justify-content-center">
+    <div class="col-6">
+      
+        <image class="image" id="image" src="images/3d pic.jpg"/>
     </div>
-    <script src="app.js"></script>
+    <div class= "col align-self-end">
+      
+        <ul>
+            <li><h2 class="temperature" id="temperature">temp</h2></li>
+            <li><p class="description" id="description">weather description</p></li>
+          </ul>
+    
+     <div class="btn-group col-4" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-primary">Humidity</button>
+  <button type="button" class="btn btn-primary">WindSpeed</button>
+  <button type="button" class="btn btn-primary">Rain</button>
+</div>
+    </div>
+  </div>
+  <br>
+          <h3>Upcoming weather</h3>
+          <div class="container text-center">
+            <div class="row daysOfTheWeek">
+            <div class="col-2">Mon<p class="tempBox">temp&deg;</p></div>
+            <div class="col-2">Tues<p class="tempBox">temp&deg;</p></div>
+            <div class="col-2">Wed<p class="tempBox">temp&deg;</p></div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/"></script>
   </body>
 </html>

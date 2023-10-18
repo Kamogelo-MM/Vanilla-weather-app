@@ -1,3 +1,44 @@
 h1 {
-  color: pink;
+  margin-top: 15px;
+  margin-left: 5px;
+  text-shadow: 1px 0.5px grey;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 100;
+}
+
+h2 {
+  font-style: italics;
+}
+
+h3 {
+  text-decoration: underline;
+  margin-left: 40px;
+}
+
+ul {
+  list-style: none;
+}
+.entirePage {
+  max-width: 48%;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 10px;
+}
+.time {
+  font-size: 30px;
+  margin-left: 10px;
+  color: grey;
+  font-style: oblique;
+}
+.col-2 {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.tempBox {
+  border: 1px solid black;
+  padding: 15px 7px 15px 7px;
+  border-radius: 12%;
+  box-shadow: 2px 2px;
 }
