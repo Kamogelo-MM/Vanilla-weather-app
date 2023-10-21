@@ -9,43 +9,50 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>Weather-app</title>
   </head>
   <body>
     <div class="entirePage">
       <div class="container">
+        <form  id="form">
         <div class="row">
-        <div class="col-6">
-        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+        <div class="col-8">
+        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." autocomplete="off">
         </div>
         <div class="col-4">
         <input class="btn btn-primary" type="submit" value="Submit">
         </div>
         </div>
-        <h1 class="location" id="location">Current City/location</h1>
-        <p class="time" id="time">Time</p>
+        </form>
+        <h1 class="location" id="location"></h1>
+        <p class="date" id="date">date</p>
     
         <div class="row justify-content-center">
-    <div class="col-6">
+    <div class="col-4">
       
-        <image class="image" id="image" src="images/3d pic.jpg"/>
+        <image class="image" id="icon" src=""/>
     </div>
     <div class= "col align-self-end">
       
         <ul>
-            <li><h2 class="temperature" id="temperature">temp</h2></li>
-            <li><p class="description" id="description">weather description</p></li>
+            <li><h2 class="temperature" id="temperature"></h2></li>
+            <li class="description" id="description"></li>
+            <li class="humidity" id="Humidity"></li>
+            <li class="windSpeed" id="WindSpeed"></li>
+            <li ></li>
           </ul>
     
-     <div class="btn-group col-4" role="group" aria-label="Basic example">
+     <div class="btn-group col-4 buttons" role="group" aria-label="Basic example">
   <button type="button" class="btn btn-primary">Humidity</button>
   <button type="button" class="btn btn-primary">WindSpeed</button>
-  <button type="button" class="btn btn-primary">Rain</button>
+
 </div>
     </div>
   </div>
-  <br>
+  
           <h3>Upcoming weather</h3>
           <div class="container text-center">
             <div class="row daysOfTheWeek">
@@ -58,6 +65,6 @@
         </div>
       </div>
     </div>
-    <script src="src/"></script>
+    <script src="src/app.js"></script>
   </body>
 </html>

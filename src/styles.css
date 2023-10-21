@@ -5,30 +5,44 @@ h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 100;
 }
-
-h2 {
-  font-style: italics;
-}
-
 h3 {
   text-decoration: underline;
   margin-left: 40px;
 }
 
-ul {
+ul,
+.buttons {
   list-style: none;
+  top: 150px;
 }
 .entirePage {
-  max-width: 48%;
+  max-width: 38%;
   margin: 0 auto;
   border: 1px solid black;
-  padding: 10px;
 }
 .time {
-  font-size: 30px;
+  font-size: 30%;
   margin-left: 10px;
   color: grey;
   font-style: oblique;
+}
+.image {
+  top: -15px;
+  padding: 0;
+  margin: 0;
+ max-width: 250px;
+ margin-bottom: 0;
+}
+.temperature {
+  font-style: italics;
+  font-size: 65px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-right: 50px;
+  margin-bottom: 0;
+}
+
+.buttons {
+  top: -15px;
 }
 .col-2 {
   text-align: center;
@@ -38,7 +52,11 @@ ul {
 
 .tempBox {
   border: 1px solid black;
-  padding: 15px 7px 15px 7px;
+  padding: 20px 15px 20px 15px;
   border-radius: 12%;
   box-shadow: 2px 2px;
+}
+.description {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
 }
