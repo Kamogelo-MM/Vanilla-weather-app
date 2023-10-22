@@ -29,14 +29,14 @@ function displayWeather(response) {
    
 }
 
-function displayHumidity(response){
- let humidityElement = document.querySelector("#Humidity");
-humidityElement.innerHTML = response.data.main.humidity;
+function displayHumidity(response) {
+  let humidityElement = document.querySelector("#Humidity");
+  humidityElement.innerHTML = response.data.main.humidity;
 }
 
-function displayWindSpeed(response){
-let windElement = document.querySelector("#WindSpeed");
-windElement.innerHTML = Math.round(response.data.wind.speed);
+function displayWindSpeed(response) {
+  let windElement = document.querySelector("#WindSpeed");
+  windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
 function search(city){
@@ -51,32 +51,39 @@ function search(city){
     search(cityInput.value);
   }
 
-  function convertFarenhiet(event){
-    event.preventDefault();
-    let tempElement = document.querySelector("#temperature");
-    let sum = (celsiusTemperature * 9)/5 + 32;
-    tempElement.innerHTML= Math.round(sum);
-  }
+  function convertFahrenheit(event) {
+  event.preventDefault();
+  fahrenheitLink.classList.add("active");
+  celsiusLink.classList.remove("active");
+  let tempElement = document.querySelector("#temperature");
+  let sum = (celsiusTemperature * 9) / 5 + 32;
+}
 
   function convertCelsius(event){
     event.preventDefault();
+    celsiusLink.classList.add("active");
+    fahrenheitLink.classList.remove("active");
       let tempElement = document.querySelector("#temperature");
       tempElement.innerHTML = Math.round(celsiusTemperature);
   }
 
   celsiusTemperature = null
  
-  let farenhietTemp = document.querySelector("#farenhietLink");
-  farenhietTemp.addEventListener("click",convertFarenhiet)
+  let fahrenheitLink = document.querySelector("#fahrenheit-Link");
+fahrenheitLink.addEventListener("click", convertFahrenheit);
 
-  let celsiusTemp = document.querySelector("#celsiusLink");
-  celsiusTemp.addEventListener("click",convertCelsius);
+  let celsiusTemp = document.querySelector("#celsius-Link");
+  celsiusTemp.addEventListener("click",convertCelsius,);
 
-  let humidityButton = document.querySelector("#button1");
-  humidityButton.addEventListener("click", displayHumidity)
+  let celsiusLink = document.querySelector("#celsius-Link");
+celsiusLink.addEventListener("click",convertFahrenheit,);
 
- let windSpeedButton = document.querySelector("#button2");
-  windSpeedButton.addEventListener("click", displayWindSpeed)
+  
+let humidityButton = document.querySelector("#button1");
+humidityButton.addEventListener("click", displayHumidity);
+
+let windSpeedButton = document.querySelector("#button2");
+windSpeedButton.addEventListener("click", displayWindSpeed);
 
 let form = document.querySelector("#form");
 form.addEventListener("submit",handleSumbit);

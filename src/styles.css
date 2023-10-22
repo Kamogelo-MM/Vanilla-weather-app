@@ -60,3 +60,10 @@ ul,
   font-size: 20px;
   color: rgb(0, 0, 0);
 }
+.degrees .active{
+  color: black;
+  cursor: default;
+}
+.degrees .active:hover{
+text-decoration: none;
+}
