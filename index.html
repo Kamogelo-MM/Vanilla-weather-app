@@ -38,16 +38,19 @@
     <div class= "col align-self-end">
       
         <ul>
-            <li><h2 class="temperature" id="temperature"></h2></li>
+          <div class="row">
+            <li><h2 class="temperature" id="temperature"></h2></li><span><a href="" id="celsiusLink">C</a>|<a href="" id="farenhietLink">F</a></span>
+          </div>
             <li class="description" id="description"></li>
-            <li class="humidity" id="Humidity"></li>
-            <li class="windSpeed" id="WindSpeed"></li>
+            <li>Humidity:<p ass="humidity" id="Humidity"></p></li>
+            <li>WindSpeed:<p class="windSpeed" id="WindSpeed"></pclass></p></li>
             <li ></li>
+
           </ul>
     
      <div class="btn-group col-4 buttons" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-primary">Humidity</button>
-  <button type="button" class="btn btn-primary">WindSpeed</button>
+  <button type="button" class="btn btn-primary" id="button1">Humidity</button>
+  <button type="button" class="btn btn-primary" id="button2">WindSpeed</button>
 
 </div>
     </div>
