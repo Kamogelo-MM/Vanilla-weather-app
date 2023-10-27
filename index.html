@@ -9,7 +9,9 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>Weather-app</title>
@@ -23,11 +25,12 @@
         <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." autocomplete="off">
         </div>
         <div class="col-4">
-        <input class="btn btn-primary" type="submit" value="Submit">
+        <input class="btn btn-primary" type="submit" value="Search">
         </div>
         </div>
         </form>
         <h1 class="location" id="location"></h1>
+        <div class="middleborder">
         <p class="date" id="date">date</p>
     
         <div class="row justify-content-center">
@@ -42,28 +45,19 @@
             <li><h2 class="temperature" id="temperature"></h2></li><span class="degrees"><a href="" id="celsius-Link" class="active">&deg;C </a>|<a href="" id="fahrenheit-Link">&deg;F</a></span>
           </div>
             <li class="description" id="description"></li>
-            <li>Humidity:<p ass="humidity" id="Humidity"></p></li>
-            <li>WindSpeed:<p class="windSpeed" id="WindSpeed"></pclass></p></li>
-            <li ></li>
+            <li>Humidity:<p class="humidity" id="Humidity"></p></li>
+            <li>WindSpeed:<p class="windSpeed" id="WindSpeed"></p></li>
+          
 
           </ul>
-    
-     <div class="btn-group col-4 buttons" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-primary" id="button1">Humidity</button>
-  <button type="button" class="btn btn-primary" id="button2">WindSpeed</button>
-
-</div>
     </div>
   </div>
-  
+  </div>
           <h3>Upcoming weather</h3>
-          <div class="container text-center">
-            <div class="row daysOfTheWeek">
-            <div class="col-2">Mon<p class="tempBox">temp&deg;</p></div>
-            <div class="col-2">Tues<p class="tempBox">temp&deg;</p></div>
-            <div class="col-2">Wed<p class="tempBox">temp&deg;</p></div>
-            </div>
+          <div class="weather-forecast" id="weather-forecast">
+            
           </div>
+          <p><a href="https://github.com/Kamogelo-MM/Vanilla-weather-app.git"> Code by Kamogelo-MM</a></p>
           </div>
         </div>
       </div>
